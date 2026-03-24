@@ -1,0 +1,27 @@
+.dashboard-window {
+    min-width: 20rem;
+    border: 2px solid rgb(228, 228, 228);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.window-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.window-title {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+
+.dashboard-table {
+    width: 100%;
+}
+
+table, th, td {
+    
+    padding: .5rem;
+    border: 2px solid rgb(228, 228, 228);
+    border-collapse: collapse;
+}

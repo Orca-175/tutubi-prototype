@@ -54,5 +54,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 html {
+    color: rgb(48, 48, 48);
     font-family: system-ui;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none; 
+    color: inherit;          
+    cursor: auto;          
 }

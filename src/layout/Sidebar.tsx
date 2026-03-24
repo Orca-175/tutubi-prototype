@@ -6,20 +6,20 @@ function Sidebar() {
     <div className="sidebar">
       <div className="sidebar-content">
         <div className="brand">
-          Brand
+          Tutubi
         </div>
         <nav>
-          <NavigationButton>Home</NavigationButton>
+          <NavigationButton route="/">Home</NavigationButton>
           <hr />
-          <NavigationButton>Inventory</NavigationButton>
+          <NavigationButton route="/inventory">Inventory</NavigationButton>
           <hr />
-          <NavigationButton>Ledger</NavigationButton>
+          <NavigationButton route="/ledger">Ledger</NavigationButton>
           <hr />
-          <NavigationButton>Orders</NavigationButton>
+          <NavigationButton route="/orders">Orders</NavigationButton>
           <hr />
-          <NavigationButton>Employees</NavigationButton>
+          <NavigationButton route="/employees">Employees</NavigationButton>
           <hr />
-          <NavigationButton>Clients</NavigationButton>
+          <NavigationButton route="/clients">Clients</NavigationButton>
         </nav>
       </div>
     </div>

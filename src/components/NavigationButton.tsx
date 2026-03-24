@@ -1,12 +1,18 @@
+import { Link } from "react-router-dom";
 import type { ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
+  route: string;
 }
 
-function NavigationButton({ children }: Props) {
+function NavigationButton({ children, route }: Props) {
   return (
-    <div className="nav-item">{children}</div>
+    <Link to={route}>
+      <div className="nav-item">
+        {children}
+      </div>
+    </Link>
   );
 }
 
