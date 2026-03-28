@@ -1,17 +1,21 @@
 .app-root {
     display: flex;
-    height: 100dvh;
+    min-height: 100dvh;
 }
 
 .main-page {
     width: 100%;
-    display: flex;
-    flex-direction: column;
     padding: 1rem;
 }
 
 .page-header {
     text-align: end;
     font-size: 2em;
-    padding: .5rem 3rem 0 3rem;
+    padding: 0 3rem 1rem 3rem;
 }
+
+.text-button:hover {
+    color: blue;
+    cursor: pointer;
+}
+

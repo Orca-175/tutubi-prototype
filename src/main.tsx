@@ -2,13 +2,12 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
-import Layout from './routes/Layout.tsx'
-import Sidebar from './layout/Sidebar.tsx'
+import Layout from './layout/Layout.tsx'
 import Home from './routes/Home.tsx'
 import Inventory from './routes/Inventory.tsx'
 import Ledger from './routes/Ledger.tsx'
 import Orders from './routes/Orders.tsx'
-import Employees from './routes/Employees.tsx'
+import Staff from './routes/Staff.tsx'
 import Clients from './routes/Clients.tsx'
 import NotFound from './routes/NotFound.tsx'
 
@@ -21,7 +20,7 @@ const router = createBrowserRouter([
       { path: "inventory", Component: Inventory },
       { path: "ledger", Component: Ledger },
       { path: "orders", Component: Orders },
-      { path: "employees", Component: Employees },
+      { path: "staff", Component: Staff },
       { path: "clients", Component: Clients },
       { path: "*", Component: NotFound },
     ],

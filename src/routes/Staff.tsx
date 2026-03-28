@@ -1,12 +1,12 @@
 import "./Common.css";
 import { PAGE_NAMES } from "../constants/pageNames";
 
-function Inventory() {
+function Staff() {
   return (
     <div className="main-page">
-      <div className="page-header">{PAGE_NAMES.inventory}</div>
+      <div className="page-header">{PAGE_NAMES.STAFF}</div>
     </div>
   );
 }
 
-export default Inventory;
+export default Staff;

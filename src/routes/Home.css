@@ -1,0 +1,16 @@
+.dashboard {
+    display: flex;
+    gap: 1rem;
+}
+
+.dashboard-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.dashboard-sub {
+    display: flex;
+    flex-direction: column;
+}

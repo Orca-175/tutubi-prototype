@@ -1,22 +1,23 @@
 .dashboard-window {
-    min-width: 20rem;
     border: 2px solid rgb(228, 228, 228);
     padding: 1rem;
     border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgb(227, 227, 227);
 }
 
 .window-header {
     display: flex;
     justify-content: space-between;
+    align-items: end;
+    margin-bottom: 1rem;
 }
 
 .window-title {
     font-size: 1.5em;
-    margin-bottom: 1rem;
 }
 
 .dashboard-table {
-    width: 100%;
 }
 
 table, th, td {

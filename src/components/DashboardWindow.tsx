@@ -1,26 +1,24 @@
 import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
-import "./DashboardWindow.css"
+import { capitalize } from "../utils/strings.ts";
+import "./DashboardWindow.css";
 
 interface Props {
   children: ReactNode;
   title: string;
+  route: string;
 }
 
-function DashboardWindow({ children, title }: Props) {
+function DashboardWindow({ children, title, route }: Props) {
   return (
     <div className="dashboard-window">
       <div className="window-header">
         <div className="window-title">{title}</div>
-        <Link to="orders">
-            
-        </Link>
+        <Link to={route}><div className="text-button">Go to {capitalize(route)}.</div></Link>
       </div>
-      <div className="dashboard-content">
-        <table className="dashboard-table">
-          {children}
-        </table>
-      </div>
+      <table className="dashboard-table">
+        {children}
+      </table>
     </div>
   );
 

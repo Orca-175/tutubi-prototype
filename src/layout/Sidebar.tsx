@@ -1,5 +1,8 @@
 import "./Sidebar.css";
+import { capitalize } from "../utils/strings";
 import NavigationButton from "../components/NavigationButton";
+import { PAGE_NAMES } from "../constants/pageNames";
+import { ROUTES } from "../constants/routes";
 
 function Sidebar() {
   return (
@@ -9,17 +12,17 @@ function Sidebar() {
           Tutubi
         </div>
         <nav>
-          <NavigationButton route="/">Home</NavigationButton>
+          <NavigationButton route={ROUTES.home}>{capitalize(PAGE_NAMES.home)}</NavigationButton>
           <hr />
-          <NavigationButton route="/inventory">Inventory</NavigationButton>
+          <NavigationButton route={ROUTES.inventory}>{capitalize(PAGE_NAMES.inventory)}</NavigationButton>
           <hr />
-          <NavigationButton route="/ledger">Ledger</NavigationButton>
+          <NavigationButton route={ROUTES.ledger}>{capitalize(PAGE_NAMES.ledger)}</NavigationButton>
           <hr />
-          <NavigationButton route="/orders">Orders</NavigationButton>
+          <NavigationButton route={ROUTES.orders}>{capitalize(PAGE_NAMES.orders)}</NavigationButton>
           <hr />
-          <NavigationButton route="/employees">Employees</NavigationButton>
+          <NavigationButton route={ROUTES.staff}>{capitalize(PAGE_NAMES.staff)}</NavigationButton>
           <hr />
-          <NavigationButton route="/clients">Clients</NavigationButton>
+          <NavigationButton route={ROUTES.clients}>{capitalize(PAGE_NAMES.clients)}</NavigationButton>
         </nav>
       </div>
     </div>
