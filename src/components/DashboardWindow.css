@@ -1,9 +1,9 @@
 .dashboard-window {
     border: 2px solid rgb(228, 228, 228);
-    padding: 1rem;
     border-radius: 10px;
-    margin-bottom: 1rem;
     box-shadow: 0 2px 5px rgb(227, 227, 227);
+    padding: 1rem;
+    overflow-x: auto;
 }
 
 .window-header {
@@ -17,12 +17,10 @@
     font-size: 1.5em;
 }
 
-.dashboard-table {
+.table-container {
+    overflow-x: auto;
 }
 
-table, th, td {
-    
-    padding: .5rem;
-    border: 2px solid rgb(228, 228, 228);
-    border-collapse: collapse;
+.dashboard-table {
+    min-width: max-content;
 }

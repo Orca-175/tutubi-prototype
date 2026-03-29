@@ -4,14 +4,15 @@
 }
 
 .main-page {
-    width: 100%;
+    flex-grow: 1;
+    min-width: 0;
     padding: 1rem;
 }
 
 .page-header {
     text-align: end;
     font-size: 2em;
-    padding: 0 3rem 1rem 3rem;
+    padding: 0 2rem 1rem 2rem;
 }
 
 .text-button:hover {
@@ -19,3 +20,8 @@
     cursor: pointer;
 }
 
+table, th, td {
+    padding: .5rem;
+    border: 2px solid rgb(228, 228, 228);
+    border-collapse: collapse;
+}
