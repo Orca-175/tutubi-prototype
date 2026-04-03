@@ -1,4 +1,4 @@
-.dashboard-window {
+.dashboardWindow {
     border: 2px solid rgb(228, 228, 228);
     border-radius: 10px;
     box-shadow: 0 2px 5px rgb(227, 227, 227);
@@ -6,21 +6,21 @@
     overflow-x: auto;
 }
 
-.window-header {
+.windowHeader {
     display: flex;
     justify-content: space-between;
     align-items: end;
     margin-bottom: 1rem;
 }
 
-.window-title {
+.windowTitle {
     font-size: 1.5em;
 }
 
-.table-container {
+.tableContainer {
     overflow-x: auto;
 }
 
-.dashboard-table {
+.dashboardTable {
     min-width: max-content;
 }

@@ -11,7 +11,7 @@ export function SubrouteNavigation({ items }: Props) {
     return (
       <>
         <Link to={item.route}>
-          <span 
+          <span
             className={`text-button ${location.pathname != item.route && "text-button-inactive"}`}
           >
             {item.name}

@@ -4,14 +4,14 @@
     gap: 1rem;
 }
 
-.dashboard-main {
+.dashboardMain {
     display: flex;
     gap: 1rem;
     align-items: flex-start;
     overflow-x: auto;
 }
 
-.dashboard-sub {
+.dashboardSub {
     display: flex;
     flex-direction: column;
     gap: 1rem;

@@ -1,7 +1,7 @@
+import styles from "./DashboardWindow.module.css";
 import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { capitalize, removeRoutePrefix } from "../utils/strings.ts";
-import "./DashboardWindow.css";
 
 interface Props {
   children: ReactNode;
@@ -9,20 +9,18 @@ interface Props {
   route: string;
 }
 
-function DashboardWindow({ children, title, route }: Props) {
+export function DashboardWindow({ children, title, route }: Props) {
   return (
-    <div className="dashboard-window">
-      <div className="window-header">
-        <div className="window-title">{title}</div>
+    <div className={styles.dashboardWindow}>
+      <div className={styles.windowHeader}>
+        <div className={styles.windowTitle}>{title}</div>
         <Link to={route}><span className="text-button">Go to {capitalize(removeRoutePrefix(route))}</span></Link>
       </div>
-      <div className="table-container">
-        <table className="dashboard-table">
+      <div className={styles.tableContainer}>
+        <table className={styles.dashboardTable}>
           {children}
         </table>
       </div>
     </div>
   );
 } 
-
-export default DashboardWindow;

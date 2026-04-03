@@ -1,0 +1,10 @@
+.appRoot {
+    display: flex;
+    min-height: 100dvh;
+}
+
+.mainPage {
+    flex-grow: 1;
+    min-width: 0;
+    padding: 1rem;
+}

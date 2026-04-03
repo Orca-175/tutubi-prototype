@@ -1,14 +1,14 @@
-import "./Sidebar.css";
+import sidebarStyles from "./Sidebar.module.css";
 import { capitalize } from "../utils/strings";
-import NavigationButton from "../components/NavigationButton";
+import { NavigationButton } from "../components/NavigationButton";
 import { PAGE_NAMES } from "../constants/pageNames";
 import { ROUTES } from "../constants/routes";
 
 function Sidebar() {
   return (
-    <div className="sidebar">
-      <div className="sidebar-content">
-        <div className="brand">
+    <div className={sidebarStyles.sidebar}>
+      <div className={sidebarStyles.sidebarContent}>
+        <div className={sidebarStyles.brand}>
           Tutubi
         </div>
         <nav>

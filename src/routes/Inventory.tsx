@@ -1,5 +1,3 @@
-import "./Common.css";
-import "./Inventory.css";
 import { Outlet } from "react-router-dom";
 import { PAGE_NAMES } from "../constants/pageNames";
 import { ROUTES } from "../constants/routes";
@@ -12,13 +10,13 @@ function Inventory() {
   ];
 
   return (
-    <div className="main-page">
+    <>
       <div className="page-header">{PAGE_NAMES.inventory}</div>
       <div className="page-layout">
         <SubrouteNavigation items={navList} />
         <Outlet />
       </div>
-    </div>
+    </>
   );
 }
 

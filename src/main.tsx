@@ -1,7 +1,9 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+import "./common.css";
+import './index.css';
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
-import './index.css';;
+import { createRoot } from 'react-dom/client';
+import { StrictMode } from 'react';
+
 import Layout from './layout/Layout.tsx';
 import Home from './routes/Home.tsx';
 import Inventory from './routes/Inventory.tsx';
@@ -20,13 +22,13 @@ const router = createBrowserRouter([
     Component: Layout,
     children: [
       { index: true, Component: Home },
-      { 
-        path: "inventory", 
+      {
+        path: "inventory",
         Component: Inventory,
         children: [
           { index: true, element: <Navigate to="stock" /> },
-          { path: "stock", Component: InventoryStock},
-          { path: "products", Component: InventoryProducts},
+          { path: "stock", Component: InventoryStock },
+          { path: "products", Component: InventoryProducts },
         ],
       },
       { path: "ledger", Component: Ledger },

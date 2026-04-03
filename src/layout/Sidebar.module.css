@@ -5,23 +5,11 @@
     flex-shrink: 0;
 }
 
-.sidebar-content {
+.sidebarContent {
     width: 100%;
     flex-direction: column;
     align-items: center;
     padding: 0.5rem;
-}
-
-.nav-item {
-    border-radius: 25px;
-    font-size: 1.2em;
-    margin: 10px 0 10px 0;
-    text-align: center;
-}
-
-.nav-item:hover {
-    cursor: pointer;
-    background-color: rgb(40, 40, 92);
 }
 
 .brand {
