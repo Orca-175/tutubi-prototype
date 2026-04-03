@@ -14,7 +14,7 @@ function DashboardWindow({ children, title, route }: Props) {
     <div className="dashboard-window">
       <div className="window-header">
         <div className="window-title">{title}</div>
-        <Link to={route}><div className="text-button">Go to {capitalize(removeRoutePrefix(route))}</div></Link>
+        <Link to={route}><span className="text-button">Go to {capitalize(removeRoutePrefix(route))}</span></Link>
       </div>
       <div className="table-container">
         <table className="dashboard-table">

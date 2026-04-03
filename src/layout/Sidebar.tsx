@@ -18,6 +18,8 @@ function Sidebar() {
           <hr />
           <NavigationButton route={ROUTES.ledger}>{capitalize(PAGE_NAMES.ledger)}</NavigationButton>
           <hr />
+          <NavigationButton route={ROUTES.purchases}>{capitalize(PAGE_NAMES.purchases)}</NavigationButton>
+          <hr />
           <NavigationButton route={ROUTES.orders}>{capitalize(PAGE_NAMES.orders)}</NavigationButton>
           <hr />
           <NavigationButton route={ROUTES.staff}>{capitalize(PAGE_NAMES.staff)}</NavigationButton>

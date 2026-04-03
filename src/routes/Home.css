@@ -1,13 +1,13 @@
 .dashboard {
     display: flex;
+    justify-content: center;
     gap: 1rem;
 }
 
 .dashboard-main {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     gap: 1rem;
+    align-items: flex-start;
     overflow-x: auto;
 }
 

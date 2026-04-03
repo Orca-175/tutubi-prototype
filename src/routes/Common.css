@@ -12,7 +12,18 @@
 .page-header {
     text-align: end;
     font-size: 2em;
-    padding: 0 2rem 1rem 2rem;
+    margin: 0 2rem 2rem 2rem;
+}
+
+.page-layout {
+    border: 2px solid orange;
+    display: flex;
+    flex-direction: column;
+}
+
+.subroute-nav {
+    display: flex;
+    gap: 1rem;
 }
 
 .text-button:hover {
