@@ -22,13 +22,19 @@
 }
 
 .subroute-nav {
+    align-items: center;
     display: flex;
+    font-size: 1.5rem;
     gap: 1rem;
 }
 
 .text-button:hover {
     color: blue;
     cursor: pointer;
+}
+
+.text-button-inactive {
+    color: lightgray;
 }
 
 table, th, td {
