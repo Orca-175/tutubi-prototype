@@ -1,8 +1,8 @@
 import sidebarStyles from "./Sidebar.module.css";
-import { capitalize } from "../utils/strings";
-import { NavigationButton } from "../components/NavigationButton";
-import { PAGE_NAMES } from "../constants/pageNames";
-import { ROUTES } from "../constants/routes";
+import { capitalize } from "../../utils/strings";
+import { NavigationButton } from "./NavigationButton";
+import { PAGE_NAMES } from "../../constants/pageNames";
+import { ROUTES } from "../../constants/routes";
 
 function Sidebar() {
   return (

@@ -1,0 +1,6 @@
+.subrouteNav {
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+    gap: 1rem;
+}

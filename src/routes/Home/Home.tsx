@@ -1,9 +1,9 @@
 import homeStyles from "./Home.module.css";
-import { DashboardWindow } from "../components/DashboardWindow";
-import { OrdersTablesPlaceholder } from "../components/OrdersTablesPlaceholder";
-import { OtherTablesPlaceholder } from "../components/OtherTablesPlaceholder";
-import { PAGE_NAMES } from "../constants/pageNames";
-import { ROUTES } from "../constants/routes";
+import { DashboardWindow } from "./DashboardWindow";
+import { OrdersTablesPlaceholder } from "../../components/Placeholders/OrdersTablesPlaceholder";
+import { OtherTablesPlaceholder } from "../../components/Placeholders/OtherTablesPlaceholder";
+import { PAGE_NAMES } from "../../constants/pageNames";
+import { ROUTES } from "../../constants/routes";
 
 function Home() {
   return (

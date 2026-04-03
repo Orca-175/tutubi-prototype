@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
-import { PAGE_NAMES } from "../constants/pageNames";
-import { ROUTES } from "../constants/routes";
-import { SubrouteNavigation } from "../components/SubrouteNavigation";
+import { PAGE_NAMES } from "../../constants/pageNames";
+import { ROUTES } from "../../constants/routes";
+import { SubrouteNavigation } from "../../components/SubrouteNavigation/SubrouteNavigation";
 
 function Inventory() {
   const navList = [

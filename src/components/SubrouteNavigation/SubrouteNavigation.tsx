@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import styles from "./SubrouteNavigation.module.css";
 
 interface Props {
   items: { name: string, route: string }[];
@@ -23,6 +24,6 @@ export function SubrouteNavigation({ items }: Props) {
   });
 
   return (
-    <div className="subroute-nav">{html}</div>
+    <div className={styles.subrouteNav}>{html}</div>
   );
 }

@@ -1,7 +1,7 @@
 import styles from "./DashboardWindow.module.css";
 import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
-import { capitalize, removeRoutePrefix } from "../utils/strings.ts";
+import { capitalize, removeRoutePrefix } from "../../utils/strings.ts";
 
 interface Props {
   children: ReactNode;

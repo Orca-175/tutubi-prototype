@@ -1,4 +1,4 @@
-import { PAGE_NAMES } from "../constants/pageNames";
+import { PAGE_NAMES } from "../../constants/pageNames";
 
 function Clients() {
   return (

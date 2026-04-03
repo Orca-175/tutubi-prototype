@@ -5,16 +5,8 @@
 }
 
 .page-layout {
-    border: 2px solid orange;
     display: flex;
     flex-direction: column;
-}
-
-.subroute-nav {
-    align-items: center;
-    display: flex;
-    font-size: 1.5rem;
-    gap: 1rem;
 }
 
 .text-button:hover {
