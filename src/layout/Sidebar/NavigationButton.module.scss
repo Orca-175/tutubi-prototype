@@ -1,0 +1,14 @@
+@use "../../styles/colors.scss";
+
+.navItem {
+    border-radius: 25px;
+    font-size: 1.25rem;
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 0.25em;
+    text-align: center;
+}
+
+.navItem:hover {
+    cursor: pointer;
+    background-color: colors.$secondary-hover;
+}

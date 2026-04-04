@@ -1,9 +1,12 @@
+@use "../../styles/colors.scss";
+
 .appRoot {
     display: flex;
     min-height: 100dvh;
 }
 
 .mainPage {
+    background-color: colors.$primary;
     flex-grow: 1;
     min-width: 0;
     padding: 1rem;

@@ -1,5 +1,5 @@
-import "./common.css";
-import './index.css';
+import "./styles/common.scss";
+import './styles/index.scss';
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
 import { createRoot } from 'react-dom/client';
 import { StrictMode } from 'react';

@@ -1,4 +1,4 @@
-import styles from "./DashboardWindow.module.css";
+import styles from "./DashboardWindow.module.scss";
 import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { capitalize, removeRoutePrefix } from "../../utils/strings.ts";

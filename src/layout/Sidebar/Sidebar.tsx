@@ -1,4 +1,4 @@
-import styles from "./Sidebar.module.css";
+import styles from "./Sidebar.module.scss";
 import { capitalize } from "../../utils/strings";
 import { NavigationButton } from "./NavigationButton";
 import { PAGE_NAMES } from "../../constants/pageNames";

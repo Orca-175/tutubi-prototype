@@ -1,4 +1,4 @@
-import styles from "./Home.module.css";
+import styles from "./Home.module.scss";
 import { DashboardWindow } from "./DashboardWindow";
 import { OrdersTablesPlaceholder } from "../../components/Placeholders/OrdersTablesPlaceholder";
 import { OtherTablesPlaceholder } from "../../components/Placeholders/OtherTablesPlaceholder";

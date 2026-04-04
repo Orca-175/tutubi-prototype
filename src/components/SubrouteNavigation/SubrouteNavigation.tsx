@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import styles from "./SubrouteNavigation.module.css";
+import styles from "./SubrouteNavigation.module.scss";
 
 interface Props {
   items: { name: string, route: string }[];
@@ -13,7 +13,7 @@ export function SubrouteNavigation({ items }: Props) {
       <>
         <Link to={item.route}>
           <span
-            className={`text-button ${location.pathname != item.route && "text-button-inactive"}`}
+            className={location.pathname != item.route ? " text-button text-button-inactive" : "text-button-active"}
           >
             {item.name}
           </span>

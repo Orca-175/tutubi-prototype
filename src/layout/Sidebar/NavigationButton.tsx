@@ -1,4 +1,4 @@
-import styles from "./NavigationButton.module.css"
+import styles from "./NavigationButton.module.scss"
 import { Link } from "react-router-dom";
 import type { ReactNode } from "react";
 

@@ -1,3 +1,5 @@
+@use "./colors.scss";
+
 .page-header {
     text-align: end;
     font-size: 2em;
@@ -10,10 +12,15 @@
 }
 
 .text-button:hover {
-    color: blue;
+    color: colors.$primary-text-hover;
     cursor: pointer;
 }
 
+/* For lists of text buttons with only one selectable option*/
+.text-button-active:hover {
+    cursor: default;
+}
+
 .text-button-inactive {
-    color: lightgray;
+    color: colors.$primary-text-inactive;
 }
