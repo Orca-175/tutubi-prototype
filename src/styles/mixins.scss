@@ -1,0 +1,5 @@
+@use "./colors.scss";
+
+@mixin default-primary-box-shadow {
+    box-shadow: 0 .125em .25em colors.$primary-shadow;
+}

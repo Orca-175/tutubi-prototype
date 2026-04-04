@@ -1,3 +1,4 @@
+import { Fragment } from "react/jsx-runtime";
 import { Link, useLocation } from "react-router-dom";
 import styles from "./SubrouteNavigation.module.scss";
 
@@ -10,7 +11,7 @@ export function SubrouteNavigation({ items }: Props) {
 
   const html = items.map((item, index) => {
     return (
-      <>
+      <Fragment key={item.name}>
         <Link to={item.route}>
           <span
             className={location.pathname != item.route ? " text-button text-button-inactive" : "text-button-active"}
@@ -19,7 +20,7 @@ export function SubrouteNavigation({ items }: Props) {
           </span>
         </Link>
         {(index != items.length - 1) && <span>|</span>}
-      </>
+      </Fragment>
     );
   });
 

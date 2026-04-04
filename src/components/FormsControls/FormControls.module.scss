@@ -1,0 +1,15 @@
+@use "../../styles/colors.scss";
+@use "../../styles/mixins.scss";
+
+.inputContainer {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+}
+
+.formInput {
+    @include mixins.default-primary-box-shadow;
+    border: 1px solid colors.$primary-border;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+}

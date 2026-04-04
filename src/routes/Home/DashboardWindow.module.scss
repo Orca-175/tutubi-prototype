@@ -1,9 +1,10 @@
 @use "../../styles/colors.scss";
+@use "../../styles/mixins.scss";
 
 .dashboardWindow {
+    @include mixins.default-primary-box-shadow;
     border: 2px solid colors.$primary-border;
     border-radius: 10px;
-    box-shadow: 0 2px 5px colors.$primary-shadow;
     padding: 1rem;
     overflow-x: auto;
 }
