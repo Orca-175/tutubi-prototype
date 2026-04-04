@@ -1,11 +1,9 @@
 import { PAGE_NAMES } from "../../constants/pageNames";
 
-function Inventory() {
+export function Purchases() {
   return (
     <>
       <div className="page-header">{PAGE_NAMES.purchases}</div>
     </>
   );
 }
-
-export default Inventory;

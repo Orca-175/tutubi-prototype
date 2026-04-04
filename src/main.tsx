@@ -4,17 +4,17 @@ import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import { createRoot } from 'react-dom/client';
 import { StrictMode } from 'react';
 
-import Layout from './layout/Layout/Layout.tsx';
-import Home from './routes/Home/Home.tsx';
-import Inventory from './routes/Inventory/Inventory.tsx';
+import { Layout } from './layout/Layout/Layout.tsx';
+import { Home } from './routes/Home/Home.tsx';
+import { Inventory } from './routes/Inventory/Inventory.tsx';
 import { InventoryStock } from './routes/Inventory/InventoryStock.tsx';
 import { InventoryProducts } from './routes/Inventory/InventoryProducts.tsx';
-import Ledger from './routes/Ledger/Ledger.tsx';
-import Purchases from './routes/Purchases/Purchases.tsx';
-import Orders from './routes/Orders/Orders.tsx';
-import Staff from './routes/Staff/Staff.tsx';
-import Clients from './routes/Clients/Clients.tsx';
-import NotFound from './routes/NotFound.tsx';
+import { Ledger } from './routes/Ledger/Ledger.tsx';
+import { Purchases } from './routes/Purchases/Purchases.tsx';
+import { Orders } from './routes/Orders/Orders.tsx';
+import { Staff } from './routes/Staff/Staff.tsx';
+import { Clients } from './routes/Clients/Clients.tsx';
+import { NotFound } from './routes/NotFound.tsx';
 
 const router = createBrowserRouter([
   {

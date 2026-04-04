@@ -1,4 +1,4 @@
-function NotFound() {
+export function NotFound() {
   return (
     <>
       <div className="main-page">
@@ -7,5 +7,3 @@ function NotFound() {
     </>
   );
 }
-
-export default NotFound;

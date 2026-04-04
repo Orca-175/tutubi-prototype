@@ -1,16 +1,14 @@
-import layoutStyles from "./Layout.module.css";
+import styles from "./Layout.module.css";
 import { Outlet } from "react-router-dom";
-import Sidebar from "../Sidebar/Sidebar";
+import { Sidebar } from "../Sidebar/Sidebar";
 
-function Layout() {
+export function Layout() {
   return (
-    <div className={layoutStyles.appRoot}>
+    <div className={styles.appRoot}>
       <Sidebar />
-      <div className={layoutStyles.mainPage}>
+      <div className={styles.mainPage}>
         <Outlet />
       </div>
     </div>
   ); 
 }
-
-export default Layout;

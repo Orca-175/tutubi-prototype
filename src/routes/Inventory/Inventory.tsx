@@ -3,7 +3,7 @@ import { PAGE_NAMES } from "../../constants/pageNames";
 import { ROUTES } from "../../constants/routes";
 import { SubrouteNavigation } from "../../components/SubrouteNavigation/SubrouteNavigation";
 
-function Inventory() {
+export function Inventory() {
   const navList = [
     { name: PAGE_NAMES.stock, route: ROUTES.stock },
     { name: PAGE_NAMES.products, route: ROUTES.products },
@@ -19,5 +19,3 @@ function Inventory() {
     </>
   );
 }
-
-export default Inventory;
