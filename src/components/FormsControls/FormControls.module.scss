@@ -1,15 +1,44 @@
 @use "../../styles/colors.scss";
 @use "../../styles/mixins.scss";
 
+$input-width: 16ch;
+
 .inputContainer {
     align-items: center;
     display: flex;
     gap: 1rem;
+    min-height: 2.25rem;
+    width: 32ch;
+}
+
+.inputLabel {
+    margin-right:auto;
 }
 
 .formInput {
     @include mixins.default-primary-box-shadow;
+    background-color: white;
     border: 1px solid colors.$primary-border;
     border-radius: 0.5rem;
+    width: $input-width;
     padding: 0.25rem;
+}
+
+.checkboxContainer {
+    display: flex;
+    justify-content: end;
+    width: $input-width;
+}
+
+.formSubmit {
+    @include mixins.default-primary-box-shadow;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: colors.$button;
+    color: colors.$button-text;
+    padding: 0.375rem 1rem;
+}
+
+.formSubmit:hover {
+    cursor: pointer;
 }

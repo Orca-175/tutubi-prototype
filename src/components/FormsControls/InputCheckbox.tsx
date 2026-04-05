@@ -1,14 +1,17 @@
+
 import styles from "./FormControls.module.scss";
 
 interface Props {
   label: string;
 }
 
-export function InputText({ label }: Props) {
+export function InputCheckbox({ label }: Props) {
   return (
     <div className={styles.inputContainer}>
       <span className={styles.inputLabel}>{label}: </span>
-      <input className={styles.formInput} type="text" />
+      <span className={styles.checkboxContainer}>
+        <input className={styles.checkbox} type="checkbox" />
+      </span>
     </div>
   );
 }
