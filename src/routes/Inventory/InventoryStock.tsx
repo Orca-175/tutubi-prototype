@@ -2,6 +2,7 @@ import styles from "./InventoryStocks.module.scss";
 import { InputDropdown } from "../../components/FormsControls/inputDropdown";
 import { InputSubmit } from "../../components/FormsControls/InputSubmit";
 import { InputText } from "../../components/FormsControls/InputText";
+import { InventoryStockTable } from "../../components/Placeholders/InventoryStockTable";
 
 export function InventoryStock() {
   const productChoices = [
@@ -35,6 +36,7 @@ export function InventoryStock() {
           <InputDropdown label="Expiry" choices={expiryChoices} />
         </div>
         <InputSubmit label="Apply Filters" />
+        <InventoryStockTable />
       </form>
     </>
   );

@@ -40,5 +40,6 @@ $input-width: 16ch;
 }
 
 .formSubmit:hover {
+    background-color: colors.$button-hover;
     cursor: pointer;
 }
