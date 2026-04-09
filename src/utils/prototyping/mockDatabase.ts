@@ -9,7 +9,23 @@ interface InventoryItem {
     price: number;
 }
 
-export const tableKeys = [
+interface GroupedInventoryRows {
+    [productName: string]: {
+        totalCurrentQuantity: number;
+        totalOutgoingQuantity: number;
+        price: number;
+        inventoryRows: InventoryItem[];
+    };
+}
+
+export const parentTableKeys = [
+    "Product Name",
+    "Total Current Quantity",
+    "Total Outgoing Quantity",
+    "Price/kg",
+];
+
+export const childTableKeys = [
     "Product Name",
     "Batch Number",
     "Current Quantity",
@@ -17,8 +33,30 @@ export const tableKeys = [
     "Date Stored",
     "Days Before Expiry",
     "Supplier",
-    "Price",
+    "Price/kg",
 ];
+
+export function groupRows(inventoryItems: InventoryItem[]): GroupedInventoryRows {
+    const groupedRows: GroupedInventoryRows = {};
+
+    for (const item of inventoryItems) {
+        if (!(item.productName in groupedRows)) {
+            groupedRows[item.productName] = { 
+                totalCurrentQuantity: 0,
+                totalOutgoingQuantity: 0,
+                price: 0,
+                inventoryRows: [],
+            };
+        }
+
+        groupedRows[item.productName].totalCurrentQuantity += item.currentQuantity;
+        groupedRows[item.productName].totalOutgoingQuantity += item.outgoingQuantity;
+        groupedRows[item.productName].price = item.price;
+        groupedRows[item.productName].inventoryRows.push(item);
+    };
+
+    return groupedRows;
+}
 
 export const data: InventoryItem[] = [
     {
