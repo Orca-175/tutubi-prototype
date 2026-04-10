@@ -17,7 +17,7 @@ $input-width: 16ch;
 
 .formInput {
     @include mixins.default-primary-box-shadow;
-    background-color: white;
+    background-color: colors.$text-field-background;
     border: 1px solid colors.$primary-border;
     border-radius: 0.5rem;
     width: $input-width;

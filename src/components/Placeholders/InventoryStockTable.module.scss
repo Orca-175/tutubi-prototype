@@ -1,8 +1,25 @@
+@use "../../styles/colors.scss";
+
 .stockTable {
     align-self: stretch;
+    background-color: colors.$table-background;
 }
 
-tr:hover {
-    background-color: #f1f1f1;
+.parentTableRow:hover {
+    background-color: colors.$table-hover;
     cursor: pointer;
+}
+
+.childTableContainer {
+    background-color: colors.$primary;
+
+    div {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    table {
+        background-color: colors.$table-background;
+    }
 }
