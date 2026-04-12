@@ -1,3 +1,4 @@
+import styles from "./Inventory.module.scss";
 import { InputDropdown } from "../../components/FormsControls/inputDropdown";
 import { InputSubmit } from "../../components/FormsControls/InputSubmit";
 import { InputText } from "../../components/FormsControls/InputText";
@@ -35,7 +36,9 @@ export function InventoryStock() {
           <InputDropdown label="Expiry" choices={expiryChoices} />
         </div>
         <InputSubmit label="Apply Filters" />
-        <InventoryStockTable />
+        <div className={styles.tableCard}>
+          <InventoryStockTable />
+        </div>
       </form>
     </>
   );

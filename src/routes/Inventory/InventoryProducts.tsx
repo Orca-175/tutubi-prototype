@@ -1,3 +1,4 @@
+import styles from "./Inventory.module.scss";
 import { InventoryProductsTable } from "../../components/Placeholders/InventoryProductsTable";
 import { InputSubmit } from "../../components/FormsControls/InputSubmit";
 import { InputText } from "../../components/FormsControls/InputText";
@@ -13,7 +14,9 @@ export function InventoryProducts() {
         </div>
           <InputSubmit label="Add Product" />
       </form>
-      <InventoryProductsTable />
+      <div className={styles.tableCard}>
+        <InventoryProductsTable />
+      </div>
     </>
   );
 }

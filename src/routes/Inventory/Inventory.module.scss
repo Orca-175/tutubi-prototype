@@ -1,0 +1,6 @@
+@use "../../styles/mixins.scss";
+
+.tableCard {
+    @include mixins.primary-card;
+    align-self: stretch;
+}

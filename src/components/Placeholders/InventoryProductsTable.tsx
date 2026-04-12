@@ -1,8 +1,9 @@
+import styles from "./InventoryProductsTable.module.scss";
 import { pesoSign } from "../../constants/symbols";
 
 export function InventoryProductsTable() {
   return(
-    <table>
+    <table className={styles.productsTable}>
       <thead>
         <tr>
           <th>Product name</th>
