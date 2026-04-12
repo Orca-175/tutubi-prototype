@@ -77,7 +77,8 @@ hr {
 }
 
 table, th, td {
-    padding: .5rem;
+    background-color: colors.$table-background;
     border: 2px solid colors.$primary-border;
     border-collapse: collapse;
+    padding: .5rem;
 }

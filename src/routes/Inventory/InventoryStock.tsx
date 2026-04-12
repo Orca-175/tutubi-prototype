@@ -1,4 +1,3 @@
-import styles from "./InventoryStocks.module.scss";
 import { InputDropdown } from "../../components/FormsControls/inputDropdown";
 import { InputSubmit } from "../../components/FormsControls/InputSubmit";
 import { InputText } from "../../components/FormsControls/InputText";
@@ -27,8 +26,8 @@ export function InventoryStock() {
 
   return (
     <>
-      <form>
-        <div className={styles.filterInputsContainer}>
+      <form className="commonPageForm">
+        <div className="commonPageInputsContainer">
           <InputText label="Search Name"/>
           <InputDropdown label="Product Name" choices={productChoices} />
           <InputDropdown label="Batch number" choices={batchNumberChoices} />

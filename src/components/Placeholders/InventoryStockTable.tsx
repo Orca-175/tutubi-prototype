@@ -1,7 +1,7 @@
 import styles from "./InventoryStockTable.module.scss";
 import { pesoSign } from "../../constants/symbols";
 import { parentTableKeys, childTableKeys, data, groupRows } from "../../utils/prototyping/mockDatabase";
-import { useState, type ReactElement } from "react";
+import { Fragment, useState, type ReactElement } from "react";
 
 export function InventoryStockTable() {
   const tableData = groupRows(data);
@@ -12,11 +12,10 @@ export function InventoryStockTable() {
 
   for (const [productName, productInfo] of Object.entries(tableData)) {
     tableRows.push(
-      <>
+      <Fragment key={productName}>
         {/* Parent table row */}
         <tr 
           className={styles.parentTableRow} 
-          key={productName + "parent"}
           onClick={() => {
             // Adds/removes productName from expanded
             if (expanded.includes(productName)) {
@@ -35,28 +34,30 @@ export function InventoryStockTable() {
         {/* Child table row */}
         {
           expanded.includes(productName) && 
-            <tr className={styles.childTableContainer} key={productName + "children"}> {/* Row of parent table that contains child table */}
+            // Row of parent table that contains child table
+            <tr className={styles.childTableContainer}> 
               <td colSpan={4}>
                 <div>
-                  <table> { /* Actual child table */}
+                  {/* Actual child table */}
+                  <table> 
                     <thead>
                       <tr>
                         {childTableKeys.map((item) => (
-                          <th key={item}>{item}</th>
+                          <th>{item}</th>
                         ))}
                       </tr>
                     </thead>
                     <tbody>
                       {productInfo.inventoryRows.map((row) => (
-                        <tr key={row.batchNumber}>
+                        <tr>
                           {Object.entries(row).map((entry) => {
                             const [ columnName, value ] = entry;
                             if (columnName == "currentQuantity" || columnName == "outgoingQuantity") {
-                              return <td key={row.batchNumber + columnName}>{value}kg</td>;
+                              return <td>{value}kg</td>;
                             } else if (columnName == "price") {
-                              return <td key={row.batchNumber + columnName}>{pesoSign}{value}</td>;
+                              return <td>{pesoSign}{value}</td>;
                             } else {
-                              return <td key={row.batchNumber + columnName}>{value}</td>
+                              return <td>{value}</td>
                             }
                           })}
                         </tr>
@@ -67,7 +68,7 @@ export function InventoryStockTable() {
               </td>
             </tr>
         }
-      </>
+      </Fragment>
     );
   }
 
