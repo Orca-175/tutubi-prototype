@@ -1,0 +1,35 @@
+@use "../../styles/colors.scss";
+@use "../../styles/mixins.scss";
+
+.inputsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.resultIcon {
+    color: colors.$text-success;
+}
+
+.verificationCard {
+    @include mixins.primary-card;
+    max-width: 50ch;
+
+    > p {
+        text-align: center;
+    }
+}
+
+.verificationResult {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.verificationSection {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+}

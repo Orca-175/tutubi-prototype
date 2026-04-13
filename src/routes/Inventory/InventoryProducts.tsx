@@ -13,7 +13,7 @@ export function InventoryProducts() {
         </div>
           <InputSubmit label="Add Product" />
       </form>
-      <div className="table-car">
+      <div className="table-card">
         <PHInventoryProductsTable />
       </div>
     </>

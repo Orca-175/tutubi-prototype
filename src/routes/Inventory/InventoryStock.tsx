@@ -36,7 +36,7 @@ export function InventoryStock() {
         </div>
         <InputSubmit label="Apply Filters" />
       </form>
-      <div className="table-car">
+      <div className="table-card">
         <PHInventoryStockTable />
       </div>
     </>
