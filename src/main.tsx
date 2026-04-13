@@ -10,6 +10,8 @@ import { Inventory } from './routes/Inventory/Inventory.tsx';
 import { InventoryStock } from './routes/Inventory/InventoryStock.tsx';
 import { InventoryProducts } from './routes/Inventory/InventoryProducts.tsx';
 import { Ledger } from './routes/Ledger/Ledger.tsx';
+import { LedgerTransactions } from "./routes/Ledger/LedgerTransactions.tsx";
+import { LedgerManualEntry } from "./routes/Ledger/LedgerManualEntry.tsx";
 import { Purchases } from './routes/Purchases/Purchases.tsx';
 import { Orders } from './routes/Orders/Orders.tsx';
 import { Staff } from './routes/Staff/Staff.tsx';
@@ -31,7 +33,15 @@ const router = createBrowserRouter([
           { path: "products", Component: InventoryProducts },
         ],
       },
-      { path: "ledger", Component: Ledger },
+      {
+        path: "ledger",
+        Component: Ledger,
+        children: [
+          { index: true, element: <Navigate to="transactions" /> },
+          { path: "transactions", Component: LedgerTransactions },
+          { path: "manual-entry", Component: LedgerManualEntry },
+        ],
+      },
       { path: "purchases", Component: Purchases },
       { path: "orders", Component: Orders },
       { path: "staff", Component: Staff },
