@@ -2,7 +2,7 @@ import styles from "./Inventory.module.scss";
 import { InputDropdown } from "../../components/FormsControls/inputDropdown";
 import { InputSubmit } from "../../components/FormsControls/InputSubmit";
 import { InputText } from "../../components/FormsControls/InputText";
-import { InventoryStockTable } from "../../components/Placeholders/InventoryStockTable";
+import { PHInventoryStockTable } from "../../components/Placeholders/InventoryStockTable";
 
 export function InventoryStock() {
   const productChoices = [
@@ -37,7 +37,7 @@ export function InventoryStock() {
         </div>
         <InputSubmit label="Apply Filters" />
         <div className={styles.tableCard}>
-          <InventoryStockTable />
+          <PHInventoryStockTable />
         </div>
       </form>
     </>

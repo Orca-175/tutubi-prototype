@@ -3,7 +3,7 @@ import { pesoSign } from "../../constants/symbols";
 import { parentTableKeys, childTableKeys, data, groupRows } from "../../utils/prototyping/mockDatabase";
 import { Fragment, useState, type ReactElement } from "react";
 
-export function InventoryStockTable() {
+export function PHInventoryStockTable() {
   const tableData = groupRows(data);
   const tableRows: ReactElement[] = [];
 

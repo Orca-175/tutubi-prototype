@@ -1,25 +1,18 @@
 @use "../../styles/colors.scss";
 @use "../../styles/mixins.scss";
 
-.dashboardWindow {
+.dashboardCard {
     @include mixins.primary-card;
 }
 
-.windowHeader {
+.cardHeader {
     display: flex;
+    gap: 1rem;
     justify-content: space-between;
     align-items: end;
     margin-bottom: 1rem;
 }
 
-.windowTitle {
-    font-size: 1.5em;
-}
-
-.tableContainer {
-    overflow-x: auto;
-}
-
-.dashboardTable {
-    min-width: max-content;
+.cardTitle {
+    font-size: 1.25em;
 }

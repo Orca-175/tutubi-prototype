@@ -3,6 +3,10 @@ export function capitalize(string: string) {
 }
 
 export function removeRoutePrefix(string: string) {
+    if (string == "/") {
+        return "home";
+    }
+
     if (string[0] == "/") {
         return string.slice(1);
     } else {
