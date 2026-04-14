@@ -7,6 +7,8 @@ export const ROUTES = {
     ledgerTransactions: "/ledger/transactions",
     ledgerManualEntry: "/ledger/manual-entry",
     purchases: "/purchases",
+    makePurchase: "/purchases/make-purchase",
+    suppliers: "/purchases/suppliers",
     orders: "/orders",
     staff: "/staff",
     clients: "/clients",

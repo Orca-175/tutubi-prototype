@@ -13,6 +13,8 @@ import { Ledger } from './routes/Ledger/Ledger.tsx';
 import { LedgerTransactions } from "./routes/Ledger/LedgerTransactions.tsx";
 import { LedgerManualEntry } from "./routes/Ledger/LedgerManualEntry.tsx";
 import { Purchases } from './routes/Purchases/Purchases.tsx';
+import { PurchasesMakePurchase } from "./routes/Purchases/PurchasesMakePurchase.tsx";
+import { PurchasesSuppliers } from "./routes/Purchases/PurchasesSuppliers.tsx";
 import { Orders } from './routes/Orders/Orders.tsx';
 import { Staff } from './routes/Staff/Staff.tsx';
 import { Clients } from './routes/Clients/Clients.tsx';
@@ -42,7 +44,15 @@ const router = createBrowserRouter([
           { path: "manual-entry", Component: LedgerManualEntry },
         ],
       },
-      { path: "purchases", Component: Purchases },
+      {
+        path: "purchases",
+        Component: Purchases,
+        children: [
+          { index: true, element: <Navigate to="make-purchase" /> },
+          { path: "make-purchase", Component: PurchasesMakePurchase },
+          { path: "suppliers", Component: PurchasesSuppliers },
+        ],
+      },
       { path: "orders", Component: Orders },
       { path: "staff", Component: Staff },
       { path: "clients", Component: Clients },

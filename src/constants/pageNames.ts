@@ -7,6 +7,8 @@ export const PAGE_NAMES = {
     ledgerTransactions: "Transactions",
     ledgerManualEntry: "Manual Entry",
     purchases: "Purchases",
+    makePurchase: "Make Purchase",
+    suppliers: "Suppliers",
     orders: "Orders",
     staff: "Staff",
     clients: "Clients",
