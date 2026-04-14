@@ -1,7 +1,7 @@
 import styles from "./Home.module.scss";
 import { DashboardCard } from "./DashboardCard";
 import { PHMessages } from "../../components/Placeholders/Messages";
-import { PHOrdersTables } from "../../components/Placeholders/OrdersTables";
+import { PHOrdersTable } from "../../components/Placeholders/OrdersTable";
 import { PAGE_NAMES } from "../../constants/pageNames";
 import { pesoSign } from "../../constants/symbols";
 import { ROUTES } from "../../constants/routes";
@@ -24,7 +24,7 @@ export function Home() {
         </div>
         <div>
           <DashboardCard title="Active Orders" route={ROUTES.orders}>
-            <PHOrdersTables/>
+            <PHOrdersTable/>
           </DashboardCard>
         </div>
         <div>
