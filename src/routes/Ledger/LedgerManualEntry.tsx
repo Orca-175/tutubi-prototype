@@ -1,7 +1,7 @@
 import { InputDropdown } from "../../components/FormsControls/inputDropdown";
 import { InputSubmit } from "../../components/FormsControls/InputSubmit";
 import { InputText } from "../../components/FormsControls/InputText";
-import { TransactionsTable } from "../../components/Placeholders/TransactionsTable";
+import { PHTransactionsTable } from "../../components/Placeholders/TransactionsTable";
 
 
 export function LedgerManualEntry() {
@@ -24,7 +24,7 @@ export function LedgerManualEntry() {
         <InputSubmit label="Record Transaction" />
       </form>
       <div className="table-card">
-        <TransactionsTable />
+        <PHTransactionsTable />
       </div>
     </>
   );

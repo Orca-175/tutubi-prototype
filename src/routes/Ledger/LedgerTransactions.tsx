@@ -2,7 +2,7 @@ import styles from "./LedgerTransactions.module.scss";
 import { InputDropdown } from "../../components/FormsControls/inputDropdown";
 import { InputSubmit } from "../../components/FormsControls/InputSubmit";
 import { InputText } from "../../components/FormsControls/InputText";
-import { TransactionsTable } from "../../components/Placeholders/TransactionsTable";
+import { PHTransactionsTable } from "../../components/Placeholders/TransactionsTable";
 import { LuCircleCheckBig } from "react-icons/lu";
 
 export function LedgerTransactions() {
@@ -41,7 +41,7 @@ export function LedgerTransactions() {
         </form>
       </div>
       <div className="table-card">
-        <TransactionsTable />
+        <PHTransactionsTable />
       </div>
     </>
   );

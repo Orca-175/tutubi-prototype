@@ -26,8 +26,8 @@ export function PurchasesMakePurchase() {
           </div>
         </div>
         <div className={styles.makePurchaseFormButtons}>
-          <InputSubmit label="Add purchase and email supplier" />
-          <InputSubmit label="Add purchase" />
+          <InputSubmit label="Add Purchase and Email Supplier" />
+          <InputSubmit label="Add Purchase" />
         </div>
       </form>
       <div className="table-card">

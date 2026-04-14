@@ -26,6 +26,11 @@
     }
 }
 
+.table-card-centered {
+    @extend .table-card;
+    align-self: center;
+}
+
 .text-button:hover {
     color: colors.$primary-text-hover;
     cursor: pointer;
@@ -46,6 +51,11 @@
     grid-auto-flow: column;
     grid-template-rows: repeat(3, auto);
     gap: 1rem;
+}
+
+.common-page-inputs-container-centered {
+    @extend .common-page-inputs-container;
+    align-self: center;
 }
 
 /* For lists of text buttons with only one selectable option */
