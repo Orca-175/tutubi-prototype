@@ -3,6 +3,14 @@
 
 $input-width: 16ch;
 
+@mixin form-input {
+    @include mixins.default-primary-box-shadow;
+    background-color: colors.$text-field-background;
+    border: 1px solid colors.$primary-border;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+}
+
 .inputContainer {
     align-items: center;
     display: flex;
@@ -16,12 +24,13 @@ $input-width: 16ch;
 }
 
 .formInput {
-    @include mixins.default-primary-box-shadow;
-    background-color: colors.$text-field-background;
-    border: 1px solid colors.$primary-border;
-    border-radius: 0.5rem;
+    @include form-input();
     width: $input-width;
-    padding: 0.25rem;
+}
+
+.formTextarea {
+    @include form-input();
+    resize: none;
 }
 
 .checkboxContainer {
@@ -42,4 +51,10 @@ $input-width: 16ch;
 .formSubmit:hover {
     background-color: colors.$button-hover;
     cursor: pointer;
+}
+
+.textareaContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }

@@ -1,0 +1,17 @@
+.makePurchaseForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    > :nth-child(1) {
+        display: grid;
+        gap: 1rem;
+    }
+}
+
+.makePurchaseFormButtons {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

@@ -4,11 +4,11 @@ interface Props {
   label: string;
 }
 
-export function InputText({ label }: Props) {
+export function InputTextarea({ label }: Props) {
   return (
-    <div className={styles.inputContainer}>
+    <div className={styles.textareaContainer}>
       <span className={styles.inputLabel}>{label}: </span>
-      <input className={styles.formInput} />
+      <textarea rows={4} className={styles.formTextarea} />
     </div>
   );
 }

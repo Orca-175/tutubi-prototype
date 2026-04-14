@@ -20,6 +20,10 @@
 .table-card {
     @include mixins.primary-card;
     align-self: stretch;
+
+    table {
+        width: 100%;
+    }
 }
 
 .text-button:hover {

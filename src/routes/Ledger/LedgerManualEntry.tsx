@@ -23,8 +23,6 @@ export function LedgerManualEntry() {
         </div>
         <InputSubmit label="Record Transaction" />
       </form>
-      <div>
-      </div>
       <div className="table-card">
         <TransactionsTable />
       </div>
