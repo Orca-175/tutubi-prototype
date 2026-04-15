@@ -1,6 +1,5 @@
 import { InputDropdown } from "../../components/FormsControls/inputDropdown";
 import { InputSubmit } from "../../components/FormsControls/InputSubmit";
-import { InputText } from "../../components/FormsControls/InputText";
 import { PHInventoryStockTable } from "../../components/Placeholders/InventoryStockTable";
 
 export function InventoryStock() {
@@ -28,7 +27,6 @@ export function InventoryStock() {
     <>
       <form className="common-page-form">
         <div className="common-page-inputs-container">
-          <InputText label="Search Name"/>
           <InputDropdown label="Product Name" choices={productChoices} />
           <InputDropdown label="Batch number" choices={batchNumberChoices} />
           <InputDropdown label="Supplier" choices={supplierChoices} />

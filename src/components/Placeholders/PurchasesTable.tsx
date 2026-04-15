@@ -23,7 +23,11 @@ export function PHPurchasesTable() {
           <td>2</td>
           <td>The quick brown fox jumps over the lazy dog.</td>
           <td>Pending</td>
-          <td className={styles.confirmButtonColumn}><InputSubmit label="Confirm" /></td>
+          <td>
+            <div className={styles.confirmButtonColumn}>
+              <InputSubmit label="Confirm" />
+            </div>
+          </td>
         </tr>
         <tr>
           <td>2</td>
@@ -32,7 +36,11 @@ export function PHPurchasesTable() {
           <td>2</td>
           <td>The quick brown fox jumps over the lazy dog.</td>
           <td>Pending</td>
-          <td className={styles.confirmButtonColumn}><InputSubmit label="Confirm" /></td>
+          <td>
+            <div className={styles.confirmButtonColumn}>
+              <InputSubmit label="Confirm" />
+            </div>
+          </td>
         </tr>
         <tr>
           <td>1</td>

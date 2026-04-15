@@ -6,14 +6,14 @@ export function InventoryProducts() {
   return (
     <>
       <form className="common-page-form">
-        <div className="common-page-inputs-container">
+        <div className="common-page-inputs-container-centered">
           <InputText label="Product name" />
           <InputText label="Shelf life" />
           <InputText label="Price/kg" />
         </div>
           <InputSubmit label="Add Product" />
       </form>
-      <div className="table-card">
+      <div className="table-card-centered">
         <PHInventoryProductsTable />
       </div>
     </>

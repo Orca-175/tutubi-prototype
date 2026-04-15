@@ -25,7 +25,7 @@ export function Orders() {
     <>
       <div className="page-header">{PAGE_NAMES.orders}</div>
       <div className="page-layout">
-        <div className="page-subheader">All Orders</div>
+        <div className="page-subheader">Client Orders</div>
         <form className="common-page-form">
           <div className="common-page-inputs-container">
             <InputText label="Search Client"/>
