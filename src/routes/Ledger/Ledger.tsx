@@ -5,8 +5,8 @@ import { SubrouteNavigation } from "../../components/SubrouteNavigation/Subroute
 
 export function Ledger() {
   const navList = [
-    { name: PAGE_NAMES.ledgerTransactions, route: ROUTES.ledgerTransactions },
-    { name: PAGE_NAMES.ledgerManualEntry, route: ROUTES.ledgerManualEntry },
+    { name: PAGE_NAMES.transactions, route: ROUTES.transactions },
+    { name: PAGE_NAMES.manualEntry, route: ROUTES.manualEntry },
   ];
 
   return (

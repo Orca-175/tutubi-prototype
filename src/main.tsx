@@ -17,6 +17,8 @@ import { PurchasesMakePurchase } from "./routes/Purchases/PurchasesMakePurchase.
 import { PurchasesSuppliers } from "./routes/Purchases/PurchasesSuppliers.tsx";
 import { Orders } from './routes/Orders/Orders.tsx';
 import { Staff } from './routes/Staff/Staff.tsx';
+import { StaffEmployees } from "./routes/Staff/StaffEmployees.tsx";
+import { StaffRoles } from "./routes/Staff/StaffRoles.tsx";
 import { Clients } from './routes/Clients/Clients.tsx';
 import { NotFound } from './routes/NotFound.tsx';
 
@@ -54,7 +56,15 @@ const router = createBrowserRouter([
         ],
       },
       { path: "orders", Component: Orders },
-      { path: "staff", Component: Staff },
+      { 
+        path: "staff", 
+        Component: Staff,
+        children: [
+          { index: true, element: <Navigate to="employees" /> },
+          { path: "employees", Component: StaffEmployees },
+          { path: "roles", Component: StaffRoles },
+        ],
+      },
       { path: "clients", Component: Clients },
       { path: "*", Component: NotFound },
     ],
