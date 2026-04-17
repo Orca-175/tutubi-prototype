@@ -1,0 +1,10 @@
+.roleInputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    > {
+        display: grid;
+        gap: 1rem;
+    }
+}

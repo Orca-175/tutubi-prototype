@@ -5,8 +5,8 @@ import { PHEmployeesTable } from "../../components/Placeholders/EmployeesTable";
 
 export function StaffEmployees() {
   const roleChoices = [
-    {label: "Admin", value: "value"},
     {label: "Manager", value: "value"},
+    {label: "Accountant", value: "value"},
   ];
 
   return (
