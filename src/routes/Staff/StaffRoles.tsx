@@ -3,7 +3,6 @@ import { InputSubmit } from "../../components/FormsControls/InputSubmit";
 import { InputText } from "../../components/FormsControls/InputText";
 import { InputTextarea } from "../../components/FormsControls/InputTextArea";
 import { PHRolesTable } from "../../components/Placeholders/RolesTable";
-import { InputCheckbox } from "../../components/FormsControls/InputCheckbox";
 import { RolesFormTable } from "./RolesFormTable";
 
 export function StaffRoles() {

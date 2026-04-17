@@ -1,10 +1,8 @@
-import styles from "./TransactionsTable.module.scss";
-
 import { pesoSign } from "../../constants/symbols";
 
 export function PHTransactionsTable() {
   return (
-    <table className={styles.transactionsTable}>
+    <table>
       <thead>
         <tr>
           <th>Ledger ID</th>

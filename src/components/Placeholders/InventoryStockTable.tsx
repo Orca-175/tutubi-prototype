@@ -73,7 +73,7 @@ export function PHInventoryStockTable() {
   }
 
   return (
-    <table className={styles.stockTable}>
+    <table>
       <thead>
         <tr>
           {parentTableKeys.map((header) => (

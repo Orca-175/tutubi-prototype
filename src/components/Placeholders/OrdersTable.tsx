@@ -1,9 +1,8 @@
 import { pesoSign } from "../../constants/symbols";
-import styles from "./OrdersTable.module.scss";
 
 export function PHOrdersTable() {
   return (
-    <table className={styles.ordersTable}>
+    <table>
     <thead>
       <tr>
         <th>Order ID</th>
