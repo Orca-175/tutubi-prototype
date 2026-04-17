@@ -1,4 +1,3 @@
-import styles from "./InventoryStockTable.module.scss";
 import { pesoSign } from "../../constants/symbols";
 import { parentTableKeys, childTableKeys, data, groupRows } from "../../utils/prototyping/mockDatabase";
 import { Fragment, useState, type ReactElement } from "react";
@@ -15,7 +14,7 @@ export function PHInventoryStockTable() {
       <Fragment key={productName}>
         {/* Parent table row */}
         <tr 
-          className={styles.parentTableRow} 
+          className="table-row-hoverable"
           onClick={() => {
             // Adds/removes productName from expanded
             if (expanded.includes(productName)) {
@@ -35,7 +34,7 @@ export function PHInventoryStockTable() {
         {
           expanded.includes(productName) && 
             // Row of parent table that contains child table
-            <tr className={styles.childTableContainer}> 
+            <tr> 
               <td colSpan={4}>
                 <div>
                   {/* Actual child table */}

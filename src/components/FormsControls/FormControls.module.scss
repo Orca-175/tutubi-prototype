@@ -16,7 +16,7 @@ $input-width: 16ch;
     display: flex;
     gap: 1rem;
     min-height: 2.25rem;
-    width: 32ch;
+    min-width: 32ch;
 }
 
 .inputLabel {

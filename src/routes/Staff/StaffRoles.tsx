@@ -15,7 +15,9 @@ export function StaffRoles() {
             <InputTextarea label="Description" />
           </div>
           <div>
-          <RolesFormTable />
+            <div className="table-card">
+              <RolesFormTable />
+            </div>
           </div>
         </div>
         <InputSubmit label="Add Role" />
