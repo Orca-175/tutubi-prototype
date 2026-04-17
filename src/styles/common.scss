@@ -37,7 +37,7 @@
 }
 
 /* For the inputs that appear at the top of some pages */
-.common-page-form {
+.common-form {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -45,7 +45,7 @@
     justify-content: space-between;
 }
 
-.common-page-inputs-container {
+.common-form-inputs {
     align-self: start;
     display: grid;
     grid-auto-flow: column;
@@ -53,9 +53,15 @@
     gap: 1rem;
 }
 
-.common-page-inputs-container-centered {
-    @extend .common-page-inputs-container;
+.common-form-inputs-centered {
+    @extend .common-form-inputs;
     align-self: center;
+}
+
+.common-forms-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
 }
 
 /* For lists of text buttons with only one selectable option */

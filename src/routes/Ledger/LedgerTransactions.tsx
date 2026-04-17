@@ -18,9 +18,9 @@ export function LedgerTransactions() {
 
   return (
     <>
-      <div className={styles.inputsContainer}>
-        <form className="common-page-form">
-          <div className="common-page-inputs-container">
+      <div className="common-forms-container">
+        <form className="common-form">
+          <div className="common-form-inputs">
             <InputText label="Party" />
             <InputDropdown label="Transaction Type" choices={transactionTypeChoices} />
             <InputDropdown label="Product" choices={productChoices} />

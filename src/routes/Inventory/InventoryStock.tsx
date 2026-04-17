@@ -25,8 +25,8 @@ export function InventoryStock() {
 
   return (
     <>
-      <form className="common-page-form">
-        <div className="common-page-inputs-container">
+      <form className="common-form">
+        <div className="common-form-inputs">
           <InputDropdown label="Product Name" choices={productChoices} />
           <InputDropdown label="Batch number" choices={batchNumberChoices} />
           <InputDropdown label="Supplier" choices={supplierChoices} />

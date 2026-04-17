@@ -12,8 +12,8 @@ export function LedgerManualEntry() {
 
   return (
     <>
-      <form className="common-page-form">
-        <div className="common-page-inputs-container-centered">
+      <form className="common-form">
+        <div className="common-form-inputs-centered">
           <InputText label="Transaction Date" />
           <InputDropdown label="Transaction Type" choices={transactionTypeChoices} />
           <InputText label="Party" />

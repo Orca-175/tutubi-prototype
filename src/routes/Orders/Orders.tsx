@@ -26,8 +26,8 @@ export function Orders() {
       <div className="page-header">{PAGE_NAMES.orders}</div>
       <div className="page-layout">
         <div className="page-subheader">Client Orders</div>
-        <form className="common-page-form">
-          <div className="common-page-inputs-container">
+        <form className="common-form">
+          <div className="common-form-inputs">
             <InputText label="Search Client"/>
             <InputDropdown label="Product" choices={productChoices} />
             <InputDropdown label="Order Type" choices={orderTypeChoices} />

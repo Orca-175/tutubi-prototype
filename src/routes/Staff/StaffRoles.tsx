@@ -5,8 +5,8 @@ import { PHRolesTable } from "../../components/Placeholders/RolesTable";
 export function StaffRoles() {
   return (
     <>
-      <form className="common-page-form">
-        <div className="common-page-inputs-container-centered">
+      <form className="common-form">
+        <div className="common-form-inputs-centered">
           <InputText label="Placeholder" />
         </div>
         <InputSubmit label="Apply Filters" />

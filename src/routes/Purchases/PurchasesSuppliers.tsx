@@ -5,8 +5,8 @@ import { PHSuppliersTable } from "../../components/Placeholders/SuppliersTable";
 export function PurchasesSuppliers() {
   return (
     <>
-      <form className="common-page-form">
-        <div className="common-page-inputs-container-centered">
+      <form className="common-form">
+        <div className="common-form-inputs-centered">
           <InputText label="Supplier Name" />
           <InputText label="Email Address" />
           <InputText label="Phone Number" />

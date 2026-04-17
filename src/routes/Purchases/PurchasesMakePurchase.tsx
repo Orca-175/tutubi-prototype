@@ -13,7 +13,7 @@ export function PurchasesMakePurchase() {
 
   return (
     <>
-      <form className="common-page-form">
+      <form className="common-form">
         <div className={styles.makePurchaseForm}>
           <div>
             <InputText label="Product" />

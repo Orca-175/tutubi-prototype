@@ -5,8 +5,8 @@ import { InputText } from "../../components/FormsControls/InputText";
 export function InventoryProducts() {
   return (
     <>
-      <form className="common-page-form">
-        <div className="common-page-inputs-container-centered">
+      <form className="common-form">
+        <div className="common-form-inputs-centered">
           <InputText label="Product name" />
           <InputText label="Shelf life" />
           <InputText label="Price/kg" />
