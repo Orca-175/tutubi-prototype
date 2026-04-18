@@ -1,6 +1,22 @@
 @use "./colors.scss";
 @use "./mixins.scss";
 
+.card {
+    @include mixins.primary-card
+}
+
+.card-header {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    font-size: 1.25em;
+}
+
 .page-header {
     text-align: end;
     font-size: 2rem;
@@ -36,11 +52,6 @@
     cursor: pointer;
 }
 
-.text-button:hover {
-    color: colors.$primary-text-hover;
-    cursor: pointer;
-}
-
 /* For the inputs that appear at the top of some pages */
 .common-form {
     align-items: center;
@@ -67,6 +78,13 @@
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr 1fr;
+}
+
+/* Text buttons */
+
+.text-button:hover {
+    color: colors.$primary-text-hover;
+    cursor: pointer;
 }
 
 /* For lists of text buttons with only one selectable option */

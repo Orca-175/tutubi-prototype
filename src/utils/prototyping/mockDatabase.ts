@@ -26,14 +26,12 @@ export const parentTableKeys = [
 ];
 
 export const childTableKeys = [
-    "Product Name",
     "Batch Number",
     "Current Quantity",
     "Outgoing Quantity",
     "Date Stored",
     "Days Before Expiry",
     "Supplier",
-    "Price/kg",
 ];
 
 export function groupRows(inventoryItems: InventoryItem[]): GroupedInventoryRows {

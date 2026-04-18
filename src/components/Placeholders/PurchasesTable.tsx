@@ -18,10 +18,10 @@ export function PHPurchasesTable() {
       <tbody>
         <tr>
           <td>3</td>
-          <td>Pigs</td>
+          <td>Live hogs</td>
           <td>{pesoSign}60,000</td>
           <td>2</td>
-          <td>The quick brown fox jumps over the lazy dog.</td>
+          <td>The quick brown foxes jumped over the lazy hog.</td>
           <td>Pending</td>
           <td>
             <div className={styles.confirmButtonColumn}>
@@ -31,10 +31,10 @@ export function PHPurchasesTable() {
         </tr>
         <tr>
           <td>2</td>
-          <td>Pigs</td>
+          <td>Live hogs</td>
           <td>{pesoSign}60,000</td>
           <td>2</td>
-          <td>The quick brown fox jumps over the lazy dog.</td>
+          <td>The quick brown foxes jumped over the lazy hog.</td>
           <td>Pending</td>
           <td>
             <div className={styles.confirmButtonColumn}>
@@ -44,10 +44,10 @@ export function PHPurchasesTable() {
         </tr>
         <tr>
           <td>1</td>
-          <td>Pigs</td>
+          <td>Live hogs</td>
           <td>{pesoSign}60,000</td>
           <td>2</td>
-          <td>The quick brown fox jumps over the lazy dog.</td>
+          <td>The quick brown foxes jumped over the lazy hog.</td>
           <td>Confirmed</td>
         </tr>
       </tbody>

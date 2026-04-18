@@ -1,0 +1,27 @@
+@use "../../styles/mixins.scss";
+
+.clientsCardHeader {
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+
+    > span {
+        font-size: 1.5rem;
+    }
+}
+
+.layoutContainer {
+    display: flex;
+    gap: 1rem;
+
+    > :nth-child(2) {
+        flex: 1;
+    }
+}
+
+.messagesCard {
+    @include mixins.primary-card;
+    align-self: start;
+    display: grid;
+    gap: 0.5rem;
+}

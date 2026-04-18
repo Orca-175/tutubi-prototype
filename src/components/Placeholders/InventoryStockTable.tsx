@@ -51,12 +51,14 @@ export function PHInventoryStockTable() {
                         <tr>
                           {Object.entries(row).map((entry) => {
                             const [ columnName, value ] = entry;
-                            if (columnName == "currentQuantity" || columnName == "outgoingQuantity") {
-                              return <td>{value}kg</td>;
-                            } else if (columnName == "price") {
-                              return <td>{pesoSign}{value}</td>;
-                            } else {
-                              return <td>{value}</td>
+                            if (columnName != "productName" && columnName != "price") {
+                              if (columnName == "currentQuantity" || columnName == "outgoingQuantity") {
+                                return <td>{value}kg</td>;
+                              } else if (columnName == "price") {
+                                return <td>{pesoSign}{value}</td>;
+                              } else {
+                                return <td>{value}</td>
+                              }
                             }
                           })}
                         </tr>
