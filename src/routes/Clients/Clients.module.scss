@@ -18,7 +18,6 @@
 
 .clientListCard {
     @include mixins.primary-card;
-    align-self: start;
     display: grid;
     gap: 0.5rem;
 }
@@ -30,6 +29,7 @@
 .pageCards {
     display: flex;
     gap: 1rem;
+    flex: 1;
 
     > :nth-child(2) {
         flex: 1;

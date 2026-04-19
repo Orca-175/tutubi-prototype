@@ -4,6 +4,7 @@
 @mixin chat-bubble($background-color, $color) {
     @include mixins.primary-card($padding: 0.75rem);
     background-color: $background-color;
+    border: none;
     color: $color;
     max-width: 60ch;
     width: max-content;
