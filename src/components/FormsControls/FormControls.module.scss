@@ -3,14 +3,6 @@
 
 $input-width: 16ch;
 
-@mixin form-input {
-    @include mixins.default-primary-box-shadow;
-    background-color: colors.$text-field-background;
-    border: 1px solid colors.$primary-border;
-    border-radius: 0.5rem;
-    padding: 0.25rem;
-}
-
 .inputContainer {
     align-items: center;
     display: flex;
@@ -24,12 +16,12 @@ $input-width: 16ch;
 }
 
 .formInput {
-    @include form-input();
+    @include mixins.form-input;
     width: $input-width;
 }
 
 .formTextarea {
-    @include form-input();
+    @include mixins.form-input;
     resize: none;
 }
 

@@ -1,0 +1,85 @@
+@use "../../styles/colors.scss";
+@use "../../styles/mixins.scss";
+
+@mixin chat-bubble($background-color, $color) {
+    @include mixins.primary-card($padding: 0.75rem);
+    background-color: $background-color;
+    color: $color;
+    max-width: 60ch;
+    width: max-content;
+}
+
+.chatsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1rem;
+
+    > :nth-child(1) {
+        flex: 1;
+    }
+}
+
+.messageInputContainer {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center
+}
+
+.messageInput {
+    @include mixins.form-input;
+    width: 50ch;
+}
+
+.messageInputIcon {
+    padding: 0.5rem;
+    border-radius: 10px;
+    color: colors.$button;
+
+    &:hover {
+        background-color: colors.$primary-hover;
+        cursor: pointer;
+    }
+}
+
+.receivedChat {
+    @include chat-bubble(
+        $background-color: colors.$primary,
+        $color: colors.$primary-text,
+    );
+}
+
+.receivedChatsContainer {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 2.5rem 30ch;
+
+    > :nth-child(2) {
+        display: grid;
+        gap: 0.5rem;
+    }
+}
+
+.senderPicture {
+    border-radius: 50%;
+}
+
+.sentChat {
+    @include chat-bubble(
+        $background-color: colors.$secondary-light,
+        $color: colors.$secondary-text,
+    )
+}
+
+.sentChatsContainer {
+    align-self: end;
+    display: grid;
+    gap: 0.5rem;
+}

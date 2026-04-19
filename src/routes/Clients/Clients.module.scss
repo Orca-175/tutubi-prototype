@@ -1,6 +1,12 @@
+@use "../../styles/common.scss";
+@use "../../styles/colors.scss";
 @use "../../styles/mixins.scss";
 
-.clientsCardHeader {
+.mainSectionCard {
+    @extend .card;
+}
+
+.mainSectionHeader {
     display: flex;
     gap: 1rem;
     justify-content: end;
@@ -10,18 +16,22 @@
     }
 }
 
-.layoutContainer {
+.clientListCard {
+    @include mixins.primary-card;
+    align-self: start;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.headerBusinessName {
+    margin-right: auto;
+}
+
+.pageCards {
     display: flex;
     gap: 1rem;
 
     > :nth-child(2) {
         flex: 1;
     }
-}
-
-.messagesCard {
-    @include mixins.primary-card;
-    align-self: start;
-    display: grid;
-    gap: 0.5rem;
 }
