@@ -10,17 +10,21 @@ export function Clients() {
   return (
     <>
       <div className="page-header">{PAGE_NAMES.clients}</div>
-      <div className="page-layout">
+      <div className={styles.clientPageLayout}>
         <div className="page-subheader">Businesses</div>
         <div className={styles.pageCards}>
           <div className={styles.clientListCard}>
-            <PHMessages />
-            <PHMessages />
-            <PHMessages />
-            <PHMessages />
-            <PHMessages />
-            <PHMessages />
-            <PHMessages />
+            <div>
+                <PHMessages />
+                <PHMessages />
+                <PHMessages />
+                <PHMessages />
+                <PHMessages />
+                <PHMessages />
+                <PHMessages />
+                <PHMessages />
+                <PHMessages />
+            </div>
           </div>
           <div className={styles.mainSectionCard}>
             <div className={styles.mainSectionHeader}>

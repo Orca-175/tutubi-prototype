@@ -28,9 +28,11 @@ export function Home() {
               <PHOrdersTable/>
             </DashboardCard>
           </div>
-          <div>
+          <div className={styles.messageCardContainer}>
             <DashboardCard title="Messages" route={ROUTES.clients}>
               <div className={styles.messagesRowsContainer}>
+                <PHMessages />
+                <PHMessages />
                 <PHMessages />
                 <PHMessages />
                 <PHMessages />

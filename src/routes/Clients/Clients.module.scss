@@ -2,6 +2,13 @@
 @use "../../styles/colors.scss";
 @use "../../styles/mixins.scss";
 
+.clientPageLayout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 85vh;
+}
+
 .mainSectionCard {
     @extend .card;
 }
@@ -18,9 +25,13 @@
 
 .clientListCard {
     @include mixins.primary-card;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    display: grid;
+
+    > div {
+        display: grid;
+        gap: 0.5rem;
+        overflow-y: auto;
+    }
 }
 
 .headerBusinessName {
@@ -29,8 +40,9 @@
 
 .pageCards {
     display: flex;
-    gap: 1rem;
     flex: 1;
+    gap: 1rem;
+    min-height: 0;
 
     > :nth-child(2) {
         flex: 1;

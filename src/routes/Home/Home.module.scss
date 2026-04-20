@@ -34,7 +34,16 @@
     }
 }
 
+.messageCardContainer {
+    height: 85vh;
+
+    > div {
+        max-height: 100%;
+    }
+}
+
 .messagesRowsContainer {
     display: grid;
     gap: 0.5rem;
+    overflow-y: auto;
 }
