@@ -6,9 +6,9 @@ export function Layout() {
   return (
     <div className={styles.appRoot}>
       <Sidebar />
-      <div className={styles.mainPage}>
+      <main className={styles.mainPage}>
         <Outlet />
-      </div>
+      </main>
     </div>
   ); 
 }

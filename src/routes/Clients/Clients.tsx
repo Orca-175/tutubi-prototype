@@ -2,8 +2,11 @@ import styles from "./Clients.module.scss";
 import { Chat } from "./Chat";
 import { PHMessages } from "../../components/Placeholders/Messages";
 import { PAGE_NAMES } from "../../constants/pageNames";
+import { useState } from "react";
 
 export function Clients() {
+  const [cardPage, setCardPage] = useState("chat");
+
   return (
     <>
       <div className="page-header">{PAGE_NAMES.clients}</div>
@@ -22,11 +25,24 @@ export function Clients() {
           <div className={styles.mainSectionCard}>
             <div className={styles.mainSectionHeader}>
               <span className={styles.headerBusinessName}>Business Name</span>
-              <span>Chat</span>
+              <span 
+                onClick={() => {setCardPage("chat")}}
+                className={cardPage != "chat" ? "text-button text-button-inactive" : "text-button-active"}
+              >
+                Chat
+              </span>
               <span>|</span>
-              <span className="text-button text-button-inactive">Business Information</span>
+              <span 
+                onClick={() => {setCardPage("businessInfo")}}
+                className={cardPage != "businessInfo" ? "text-button text-button-inactive" : "text-button-active"}
+              >
+                Business Information
+              </span>
             </div>
-            <Chat />
+            { cardPage == "chat" ? 
+              <Chat /> :
+              <h1>Hello, World!</h1>
+            }
           </div>
         </div>
       </div>

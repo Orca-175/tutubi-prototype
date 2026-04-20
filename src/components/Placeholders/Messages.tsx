@@ -5,9 +5,11 @@ import { LuEllipsisVertical } from "react-icons/lu";
 export function PHMessages() {
   return(
     <div className={styles.messageRow}>
+      {/* Profile picture */}
       <div>
         <img className={styles.messageImage} src={messageImagePlaceholder} alt="" />
       </div>
+      {/* Name and preview */}
       <div>
         <div className={styles.businessName}>Business Name</div>
         <div className={styles.messagePreviewContainer}>
@@ -15,6 +17,7 @@ export function PHMessages() {
           <span>13:00</span>
         </div>
       </div>
+      {/* Ellipsis menu */}
       <div>
         <div>
           <LuEllipsisVertical />
