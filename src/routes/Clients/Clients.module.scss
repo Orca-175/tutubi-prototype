@@ -25,7 +25,8 @@
 
 .clientListCard {
     @include mixins.primary-card;
-    display: grid;
+    display: flex;
+    flex-direction: column;
 
     > div {
         display: grid;

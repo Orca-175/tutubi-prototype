@@ -6,8 +6,6 @@
     background-color: $background-color;
     border: none;
     color: $color;
-    max-width: 60ch;
-    width: max-content;
 }
 
 .chatsContainer {
@@ -60,11 +58,14 @@
 .receivedChatsContainer {
     display: grid;
     gap: 1rem;
-    grid-template-columns: 2.5rem 30ch;
+    grid-template-columns: 2.5rem auto;
 
     > :nth-child(2) {
-        display: grid;
+        align-items: start;
+        display: flex;
+        flex-direction: column;
         gap: 0.5rem;
+        max-width: 60ch;
     }
 }
 
