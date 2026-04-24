@@ -6,20 +6,20 @@ export function Chat() {
   return (
   <div className={styles.chat}>
     <div className={styles.chatsContainer}>
-      <div className={styles.receivedChatsContainer}>
+      <div className={styles.receivedChatContainer}>
         <div>
-          <img className={styles.senderPicture} src={messageImagePlaceholder} />
+          <img className={styles.receivedChatPicture} src={messageImagePlaceholder} />
         </div>
         <div>
-          <div className={styles.receivedChat}>
+          <div className={styles.receivedChatBubble}>
             I made my order last week and its status has stayed on pending ever since.
           </div>
-          <div className={styles.receivedChat}>
+          <div className={styles.receivedChatBubble}>
             I want to talk to your manager.
           </div>
         </div>
       </div>
-      <div className={styles.sentChatsContainer}>
+      <div className={styles.sentChatContainer}>
         <div className={styles.sentChat}>
           I am the manager.
         </div>

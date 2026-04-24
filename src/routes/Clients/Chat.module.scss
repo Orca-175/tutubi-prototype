@@ -11,6 +11,7 @@
 .chatsContainer {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
     justify-content: end;
 }
 
@@ -48,14 +49,14 @@
     }
 }
 
-.receivedChat {
+.receivedChatBubble {
     @include chat-bubble(
         $background-color: colors.$primary,
         $color: colors.$primary-text,
     );
 }
 
-.receivedChatsContainer {
+.receivedChatContainer {
     display: grid;
     gap: 1rem;
     grid-template-columns: 2.5rem auto;
@@ -69,7 +70,7 @@
     }
 }
 
-.senderPicture {
+.receivedChatPicture {
     border-radius: 50%;
 }
 
@@ -80,7 +81,7 @@
     )
 }
 
-.sentChatsContainer {
+.sentChatContainer {
     align-self: end;
     display: grid;
     gap: 0.5rem;

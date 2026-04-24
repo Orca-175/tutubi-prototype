@@ -1,4 +1,5 @@
 import styles from "./Clients.module.scss";
+import { BusinessInformation } from "./BusinessInformation";
 import { Chat } from "./Chat";
 import { PHMessages } from "../../components/Placeholders/Messages";
 import { PAGE_NAMES } from "../../constants/pageNames";
@@ -45,7 +46,7 @@ export function Clients() {
             </div>
             { cardPage == "chat" ? 
               <Chat /> :
-              <h1>Hello, World!</h1>
+              <BusinessInformation /> 
             }
           </div>
         </div>
