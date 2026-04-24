@@ -32,12 +32,7 @@ $input-width: 16ch;
 }
 
 .formSubmit {
-    @include mixins.default-primary-box-shadow;
-    border: none;
-    border-radius: 0.5rem;
-    background-color: colors.$button;
-    color: colors.$button-text;
-    padding: 0.375rem 1rem;
+    @include mixins.primary-button
 }
 
 .formSubmit:hover {

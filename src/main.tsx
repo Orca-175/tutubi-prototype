@@ -21,6 +21,8 @@ import { StaffEmployees } from "./routes/Staff/StaffEmployees.tsx";
 import { StaffRoles } from "./routes/Staff/StaffRoles.tsx";
 import { Clients } from './routes/Clients/Clients.tsx';
 import { NotFound } from './routes/NotFound.tsx';
+import { Login } from "./routes/Authentication/Login.tsx";
+import { Register } from "./routes/Authentication/Register.tsx";
 
 const router = createBrowserRouter([
   {
@@ -68,7 +70,15 @@ const router = createBrowserRouter([
       { path: "clients", Component: Clients },
       { path: "*", Component: NotFound },
     ],
-  }
+  },
+  {
+    path: "/register",
+    Component: Register
+  },
+  {
+    path: "/login",
+    Component: Login
+  },
 ]);
 
 createRoot(document.getElementById('root')!).render(

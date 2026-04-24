@@ -1,0 +1,38 @@
+@use "../../styles/colors.scss";
+@use "../../styles/mixins.scss";
+
+.authentication {
+    align-items: center;
+    background-color: colors.$primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100dvh;
+}
+
+.form {
+    @include mixins.primary-card($padding: 1rem);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formHeader {
+    font-size: 2rem;
+}
+
+.formInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.submitLink {
+    @include mixins.primary-button;
+}
+
+.switchFormLink {
+    color: colors.$primary-text-link;
+    text-decoration: underline;
+}
