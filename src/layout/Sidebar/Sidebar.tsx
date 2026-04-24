@@ -11,8 +11,8 @@ export function Sidebar() {
         <div className={styles.brand}>
           Tutubi
         </div>
-        <nav>
-          <ul>
+        <nav className={styles.navigation}>
+          <ul className={styles.navigationButtons}>
             <li><NavigationButton route={ROUTES.home}>{capitalize(PAGE_NAMES.home)}</NavigationButton></li>
             <hr />
             <li><NavigationButton route={ROUTES.inventory}>{capitalize(PAGE_NAMES.inventory)}</NavigationButton></li>
@@ -26,6 +26,12 @@ export function Sidebar() {
             <li><NavigationButton route={ROUTES.staff}>{capitalize(PAGE_NAMES.staff)}</NavigationButton></li>
             <hr />
             <li><NavigationButton route={ROUTES.clients}>{capitalize(PAGE_NAMES.clients)}</NavigationButton></li>
+            <div className={styles.logoutButtonContainer}>
+              <hr />
+              <li>
+                <NavigationButton route={ROUTES.login}>Logout</NavigationButton>
+              </li>
+            </div>
           </ul>
         </nav>
       </div>

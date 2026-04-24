@@ -14,4 +14,6 @@ export const ROUTES = {
     employees: "/staff/employees",
     roles: "/staff/roles",
     clients: "/clients",
+    register: "/register",
+    login: "/login",
 };

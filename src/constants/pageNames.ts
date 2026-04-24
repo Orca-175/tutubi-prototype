@@ -14,4 +14,6 @@ export const PAGE_NAMES = {
     employees: "Employees",
     roles: "Roles",
     clients: "Clients",
+    register: "Register",
+    login: "Login",
 };

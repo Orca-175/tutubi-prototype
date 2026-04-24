@@ -1,5 +1,4 @@
 import styles from "./Authentication.module.scss";
-import { InputSubmit } from "../../components/FormsControls/InputSubmit";
 import { InputText } from "../../components/FormsControls/InputText";
 import { Link } from "react-router-dom";
 
