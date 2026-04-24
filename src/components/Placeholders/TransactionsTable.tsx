@@ -6,8 +6,9 @@ export function PHTransactionsTable() {
       <thead>
         <tr>
           <th>Ledger ID</th>
-          <th>Transaction Date</th>
-          <th>Transaction Type</th>
+          <th>Method</th>
+          <th>Date</th>
+          <th>Type</th>
           <th>Party</th>
           <th>Price</th>
           <th>Product</th>
@@ -17,6 +18,7 @@ export function PHTransactionsTable() {
       <tbody>
         <tr>
           <td>6</td>
+          <td>Automatic</td>
           <td>04-15-2026</td>
           <td>Sale</td>
           <td>Business Name</td>
@@ -26,6 +28,7 @@ export function PHTransactionsTable() {
         </tr>
         <tr>
           <td>5</td>
+          <td>Automatic</td>
           <td>04-15-2026</td>
           <td>Sale</td>
           <td>Business Name</td>
@@ -35,6 +38,7 @@ export function PHTransactionsTable() {
         </tr>
         <tr>
           <td>4</td>
+          <td>Automatic</td>
           <td>04-15-2026</td>
           <td>Sale</td>
           <td>Business Name</td>
@@ -44,15 +48,17 @@ export function PHTransactionsTable() {
         </tr>
         <tr>
           <td>3</td>
+          <td>Manual</td>
           <td>04-14-2026</td>
           <td>Purchase</td>
-          <td>Farm Name</td>
+          <td>Store Name</td>
           <td>{pesoSign}1200</td>
-          <td>Pigs</td>
+          <td>Uniforms</td>
           <td>2</td>
         </tr>
         <tr>
           <td>2</td>
+          <td>Automatic</td>
           <td>04-14-2026</td>
           <td>Sale</td>
           <td>Business Name</td>
@@ -62,6 +68,7 @@ export function PHTransactionsTable() {
         </tr>
         <tr>
           <td>1</td>
+          <td>Automatic</td>
           <td>04-13-2026</td>
           <td>Purchase</td>
           <td>Farm Name</td>
